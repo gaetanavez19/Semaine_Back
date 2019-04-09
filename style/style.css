@@ -1,0 +1,81 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header{
+    background-color: #1A1A1A;
+    position: relative;
+    margin: -9px;
+    margin-top: -22px;
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+
+h1 .sitename{
+    color: #F8CA00;
+    font-size: 28px;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.header_link{
+    width: 400px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    list-style-type: none;
+
+}
+
+.header_users{
+    width: 150px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    list-style-type: none;
+}
+
+.header_link li a, .header_users li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* ------------------------------- */
+
+.movie_container
+{
+    margin-left: 40px;
+}
+
+.movie_title
+{
+    color: #F8CA00;
+    font-size: 46px;
+}
+
+.movie_tagline
+{
+    font-style: italic;
+    font-size: 20px;
+    margin-top: -30px;
+}
+
+.movie_overview
+{
+    width: 500px;
+    font-size: 18px;
+}
+
+.movie_down_description
+{
+    color: gray;
+}
+
+.vote_green
+{
+    color: green;
+}

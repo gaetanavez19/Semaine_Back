@@ -11,7 +11,6 @@
       $max = date('D M Y', strtotime($nowplaying->dates->maximum));
       echo "<span>from <span>". $min . "</span>, until <span>" . $max . "</span></p>";
     ?>
-    <hr>
     <ul>
       <?php
         

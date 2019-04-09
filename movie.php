@@ -12,43 +12,46 @@
     if(isset($_GET['id'])){
     $id_movie = $_GET['id']; 
     ?>
-    <h1><?php echo $movie_id->original_title ?></h1>
-    <?php
-      echo "<p> ".$movie_id->tagline." </p>";
-    ?>
+    <div class="movie_container">
+      <div class="movie_top_description">
+        <h1 class="movie_title"><?php echo $movie_id->original_title ?></h1>
+        <p class="movie_tagline"> "<?php echo $movie_id->tagline ?> "</p>
+      </div>
+        <p class="movie_overview"><?php echo $movie_id->overview ?>..</p>
+      <div class="buttons">
 
-<?php 
-
-  foreach($movie_video_id->results as $key => $video){
-      if($key === 0)
-      {
-        echo '<iframe width="560" height="315" src="'."https://www.youtube.com/embed/".$video->key.'" frameborder="0" allowfullscreen></iframe>';
-      }
-  }
-?>
-
-    <hr>
-      <img src="<?php echo $imgurl_2 ?><?php echo $movie_id->poster_path ?>">
-      <p>Title : <?php echo $movie_id->original_title ?></p>
-      <p>Tagline : <?php echo $movie_id->tagline ?></p>
-      <p>Genres : 
-          <?php
-            foreach($movie_id->genres as $g){
-              echo '<span>' . $g->name . '</span> ';
+      </div>
+      <div class="movie_down_description">
+        <p class="movie_vote">Vote Average : <span class="vote_green"><?php echo $movie_id->vote_average ?></span></p>
+        <p>Genres : 
+            <?php
+              foreach($movie_id->genres as $g){
+                echo '<span>' . $g->name . '</span> ';
+              }
+            ?>
+        </p>
+        <p>Release Date : <?php $rel = date('d F Y', strtotime($movie_id->release_date)); echo $rel ?>
+        <p>Production Companies :
+            <?php
+              foreach($movie_id->production_companies as $key1 => $pc){
+                if($key1 === 0)
+                {
+                  echo $pc->name." ";
+                }
+              }
+            ?>
+        </p>
+      </div>
+      <?php 
+        foreach($movie_video_id->results as $key => $video){
+            if($key === 0)
+            {
+              echo '<iframe width="560" height="315" src="'."https://www.youtube.com/embed/".$video->key.'" frameborder="0" allowfullscreen></iframe>';
             }
-          ?>
-      </p>
-      <p>Overview : <?php echo $movie_id->overview ?></p>
-      <p>Release Date : <?php $rel = date('d F Y', strtotime($movie_id->release_date)); echo $rel ?>
-      <p>Production Companies :
-          <?php
-            foreach($movie_id->production_companies as $pc){
-              echo $pc->name." ";
-            }
-          ?>
-      </p>
-      <p>Vote Average : <?php echo $movie_id->vote_average ?></p>
-    <hr>
+        }
+      ?>
+    </div> 
+    <img src="<?php echo $imgurl_2 ?><?php echo $movie_id->poster_path ?>">
     <h3>Similar Movies</h3>
       <ul>
       <?php

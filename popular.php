@@ -4,7 +4,6 @@
   include_once "header.php";
 ?>
     <h2>Popular Movies</h2>
-    <hr>
     <ul>
       <?php
         include_once "api/api_popular.php";
@@ -13,7 +12,6 @@
         }
       ?>
     </ul>
-
 <?php
   include_once "footer.php";
 ?>
