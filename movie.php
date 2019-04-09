@@ -14,7 +14,7 @@
     ?>
     <h1><?php echo $movie_id->original_title ?></h1>
     <?php
-      echo "<h5> ".$movie_id->tagline." </h5>";
+      echo "<p> ".$movie_id->tagline." </p>";
     ?>
 
 <?php 
@@ -56,7 +56,7 @@
         $output=""; 
         foreach($movie_similar_id->results as $sim){
           $count--;
-          $output.='<li><a href="movie.php?id='.$sim->id.'"><img src="http://image.tmdb.org/t/p/w300'.$sim->backdrop_path.'"><h5>'.$sim->title.'</h5></a></li>';
+          $output.='<li><a href="movie.php?id='.$sim->id.'"><img src="http://image.tmdb.org/t/p/w300'.$sim->backdrop_path.'"><p>'.$sim->title.'</p></a></li>';
           if($count <=0){
             break;
   
