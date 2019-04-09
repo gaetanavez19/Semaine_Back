@@ -1,5 +1,3 @@
-<?php include '../views/partials/header.php'?>
-
 
 <!-- Pas obligatoire -->
 <style>
@@ -124,5 +122,3 @@ h2
         </div>
     <?php endforeach ?>
 </div>
-
-<?php include '../views/partials/footer.php' ?>
