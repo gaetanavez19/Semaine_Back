@@ -2,6 +2,6 @@ RewriteEngine On
 
 RewriteRule ^contact$ ./pages/tapage.php
 RewriteRule ^about-us|a-propos$ ./pages/tapage.php
-RewriteRule ^about-us|a-propos$ ./pages/wishlist.php
+RewriteRule ^wishlist$ ./pages/wishlist.php
 RewriteRule ^$ ./pages/index.php
 
