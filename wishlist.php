@@ -31,7 +31,7 @@ h2
 <!-- ************************************************************************************************************ -->
 
 <?php 
-    require '../database/database.php';
+    require './database/database.php';
 
 // Ajouter à la wishlist sur la base de données
 
