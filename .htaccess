@@ -1,4 +1,4 @@
-RewriteEngine On
+RewriteEngine Off
 
 RewriteRule ^contact$ ./pages/tapage.php
 RewriteRule ^about-us|a-propos$ ./pages/tapage.php
