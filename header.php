@@ -18,17 +18,7 @@
         <?php echo $tagline ?>"
       </small>
     </p>
-    <form action="search.php" method="get">
-      <input type="text" name="search" placeholder="Ex : Kingsman" required>
-      <select name="channel" required>
-        <option value="movie" selected="selected">Movie
-        </option>
-        <option value="tv">TV Show
-        </option>
-      </select>
-      <button type="submit">Search
-      </button>
-    </form>
+
     <ul>
       <li>
         <a href="index.php">Home
