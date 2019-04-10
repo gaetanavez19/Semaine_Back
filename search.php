@@ -15,16 +15,17 @@ include "api/api_search.php";
 			$title = $results->title;
 			$id = $results->id;
 			$release = $results->release_date;
-			$backdrop 	= $results->backdrop_path;
-			if (empty($backdrop) && is_null($backdrop)){
-				$backdrop =  dirname($_SERVER['PHP_SELF']).'/image/no-gambar.jpg';
+			$poster = $results->poster_path ;
+			if (empty($poster)){
+				$poster =  dirname($_SERVER['PHP_SELF']).'/image/not_found.jpg';
 				} 
 			else {
-				$backdrop = 'http://image.tmdb.org/t/p/w300'.$backdrop;
+				$poster = 'http://image.tmdb.org/t/p/w300'.$poster;
 				 }
-			echo '<li><a href="movie.php?id=' . $id . '"><img src="'.$backdrop.'"><h4>'.$title.'</h4></a></li>';
+			echo '<li><a href="movie.php?id=' . $id . '"><img src="'.$poster.'"><p>'.$title.'</p></a></li>';
 		}
 		}
+
 	elseif($channel=="tv"){
         foreach($search->results as $results){
 			$title 		= $results->original_name;
@@ -37,18 +38,20 @@ include "api/api_search.php";
 					$title = $title.' ('.$year.')';
 				}
 			}
-			$backdrop 	= $results->backdrop_path;
-			if (empty($backdrop) && is_null($backdrop)){
-				$backdrop = $pathloc.'image/no-backdrop.png';
+			$poster 	= $results->backdrop_path;
+			if (empty($poster) && is_null($poster)){
+				$poster = $pathloc.'image/no-backdrop.png';
 			} 
 			else {
-				$backdrop = 'http://image.tmdb.org/t/p/w300'.$backdrop;
+				$poster = 'http://image.tmdb.org/t/p/w300'.$poster;
 			}
-			echo '<li><a href="tvshow.php?id=' . $id . '"><img src="'.$backdrop.'"><h4>'.$title.'</h4></a></li>';
+			echo '<li><a href="tvshow.php?id=' . $id . '"><img src="'.$poster.'"><h4>'.$title.'</h4></a></li>';
 			}
-        }
+		}
+		
         ?>
-        </div>
+		</div>
+		
  <?php
 include('footer.php');
 ?>
