@@ -7,39 +7,43 @@ body
 .container
 {
     background: linear-gradient(#2d2d2d, #000000);
-    margin:0px;
-    padding:10px;
-    left:0;
-    right:0;
+    display: flex;
+    justify-content: center;
+
 }
 
 .container2
 {
     display: inline-block;
-    justify-items: center;
-    width: 100%;
+    width: 80%;
     height:auto;
+    justify-content: center;
 
 }
 .text
 {
+    width: 800px;
     padding:1vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     color:white;
-    width:auto;
+    margin: 0 auto;
 }
 
 .mention
 {
-    width: 40vw;
+    width: 400px;
     display:flex;
     width:auto;
-    justify-content: space-around;
+    margin: 0 200px;
     justify-content: center;
     color: white;
+}
+
+.checkmovie{
+    margin-right: 40px;
 }
 
 a
