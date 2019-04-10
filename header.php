@@ -7,8 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
     <link href="style/style.css" rel="stylesheet">
     <link href="style/header.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style/footer.css">
-    
+    <link href="./style/footer.css" rel="stylesheet">
+
     <title>
       <?php echo $title ?> - 
       <?php echo $sitename ?>
