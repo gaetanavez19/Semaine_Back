@@ -4,9 +4,10 @@ body
     margin-bottom: 0%;
 }
 
-footer
+@font-face
 {
     font-family: 'Open Sans', sans-serif;
+    src: url("https://fonts.googleapis.com/css?family=Open+Sans");
 }
 
 .container

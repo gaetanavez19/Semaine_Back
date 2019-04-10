@@ -9,4 +9,5 @@
     <link rel="stylesheet" href="./style/footer.css">
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebas" type="text/css"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="./style/footer.css">
   </head>

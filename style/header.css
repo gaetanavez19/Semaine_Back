@@ -5,8 +5,15 @@
     justify-content: flex-start;
     height: 80px;
     align-items: center;
-    font-family: 'Open Sans', sans-serif;
+
+    
 } 
+
+@font-face
+{
+    font-family: 'Open Sans', sans-serif;
+    src:url("https://fontlibrary.org/face/bebas");
+}
 
 .sitename{
     font-size: 28px;
