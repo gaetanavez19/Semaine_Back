@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="./style/footer.css">
   <body>  
     <footer>
       <div class="container">
@@ -12,7 +13,6 @@
         <div class="mention">
           <p>© CheckMovies 2019 </p>
           <p>Powered by <a href="https://developers.themoviedb.org/3">MovieDB</a></p> </p>
-          </span>
         </div>
         </div>
       </div>
