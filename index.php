@@ -1,7 +1,7 @@
 <?php
   include "conf/info.php";
   $title="CheckMovies";
-  include_once "header.php";
+  include "header.php";
 ?>
   <main class="main-container">
     <div class="text-container">
@@ -23,5 +23,5 @@
     
 
 <?php
-  include_once "footer.php";
+  include "footer.php";
 ?>

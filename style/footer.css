@@ -1,0 +1,50 @@
+body
+{
+    margin:0;
+    margin-bottom: 0%;
+}
+
+.container
+{
+    background: linear-gradient(#2d2d2d, #000000);
+    margin:0px;
+    padding:10px;
+    left:0;
+    right:0;
+}
+
+.container2
+{
+    display: inline-block;
+    justify-items: center;
+    width: 100%;
+    height:auto;
+
+}
+.text
+{
+    padding:1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+    width:auto;
+}
+
+.mention
+{
+    width: 40vw;
+    display:flex;
+    width:auto;
+    justify-content: space-around;
+    justify-content: center;
+    color: white;
+}
+
+a
+{
+    color:#FAB301;
+    text-decoration: none;
+}
+
