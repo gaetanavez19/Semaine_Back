@@ -7,11 +7,7 @@
     include_once "api/api_tunefind.php";
     $title = "Detail Movie (".$movie_id->original_title.")";
     include_once "header.php";
-  include "api/api_movie_id.php";
-  include "api/api_movie_video_id.php";
-  include "api/api_movie_similar.php";
-  $title = "Detail Movie (".$movie_id->original_title.")";
-  include "header.php";
+
 ?>
     <?php 
     if(isset($_GET['id'])){
