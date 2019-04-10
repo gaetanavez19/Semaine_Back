@@ -4,9 +4,14 @@ body
     margin-bottom: 0%;
 }
 
+footer
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
 .container
 {
-    background: linear-gradient(#2d2d2d, #000000);
+    background: #1A1A1A;
     display: flex;
     justify-content: center;
 
@@ -23,7 +28,7 @@ body
 .text
 {
     width: 800px;
-    padding:1vw;
+    padding:1.9vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -51,4 +56,3 @@ a
     color:#FAB301;
     text-decoration: none;
 }
-

@@ -4,10 +4,10 @@
       <div class="container">
         <div class="container2">
           <div class="text">
-            <p>Contact</p>
-            <p>Conditions d'utilisations</p>
-            <p>Revue de presse</p>
-            <p>Qui sommes nous</p>
+            <a href="#">Contact</a>
+            <a href="#">Terms of use</a>
+            <a href="#">Press review</a>
+            <a href="#">Who are us </a>
           </div>
         <hr width=80%>
         <div class="mention">

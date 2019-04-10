@@ -5,13 +5,16 @@
     justify-content: flex-start;
     height: 80px;
     align-items: center;
+    font-family: 'Open Sans', sans-serif;
 } 
 
-h1 .sitename{
-    color: #F8CA00;
+.sitename{
     font-size: 28px;
     text-decoration: none;
     margin-left: 18px;
+    font-family: 'BebasNeueRegular'; 
+    font-weight: normal; 
+    font-style: normal;
 }
 
 .header h1
@@ -21,36 +24,36 @@ h1 .sitename{
 
 .header_links
 {
-    display: inline-flex;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_links a
+{
+    padding-left: 5vw;
+    color:white;
+}
+
+.right_links
+{
+    display: flex;
+    justify-content: space-between;
+    width:auto;
+    padding-right: 5vw;
+    
+}
+
+.whiteLink
+{
+    width:50vw;
+    color:white;
+    display:flex;
     justify-content: flex-end;
 }
 
-/* .header_link{
-    width: 400px;
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    list-style-type: none;
-
-} */
-
-/* .header ul
+.right_links a
 {
-    display: inline-block;
-} */
-
-/* .header_users{
-    width: 150px;
-    text-decoration: none;
-    display: flex;
-    justify-content: space-between;
-    font-size: 16px;
-    list-style-type: none;
-    justify-self: flex-end;
+    padding-left:5vw;
 }
 
-.header_link li a, .header_users li a{
-    color: aliceblue;
-    text-decoration: none;
-} */
