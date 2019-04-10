@@ -5,39 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
       <?php echo $title ?> - 
-      <?php echo $sitename ?> | 
+      <?php echo $sitename ?>
     </title>
     <link href="style/style.css" rel="stylesheet">
   </head>
   <body>
-    <h1>
-      <?php echo $sitename ?>
-    </h1>
-    <p>
-      <small>"
-        <?php echo $tagline ?>"
-      </small>
-    </p>
-
-    <ul>
-      <li>
-        <a href="index.php">Home
-        </a>
-      </li>
-      <li>
+    <div class="header">
+      <h1>
+        <a class="sitename" href="index.php"><?php echo $sitename ?></a>
+      </h1>
+      <div class="header_links">
         <a href="popular.php">Popular
-        </a>
-      </li>
-      <li>
+            </a>
         <a href="now-playing.php">Now Playing
-        </a>
-      </li>
-      <li>
+            </a>
         <a href="upcoming.php">Upcoming
-        </a>
-      </li>
-      <li>
+            </a>
         <a href="tv-series.php">TV Series
-        </a>
-      </li>
-    </ul>
+            </a>
+        <a href="#">Watchlist
+              </a>
+        <a href="#">Account
+            </a>
+      </div>
+    </div>

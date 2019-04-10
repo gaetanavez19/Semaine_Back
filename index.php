@@ -1,7 +1,7 @@
 <?php
   include "conf/info.php";
   $title="CheckMovies";
-  include_once "header.php";
+  include "header.php";
 ?>
     <form action="search.php" method="get">
       <input type="text" name="search" placeholder="Ex : Kingsman" required>
@@ -16,5 +16,5 @@
     </form>
 
 <?php
-  include_once "footer.php";
+  include "footer.php";
 ?>
