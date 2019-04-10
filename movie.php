@@ -1,12 +1,17 @@
 <?php
-  include "conf/info.php";
-  
+  include "conf/info.php"; 
   $id_movie = $_GET['id'];
-    include "api/api_movie_id.php";
-    include "api/api_movie_video_id.php";
-    include "api/api_movie_similar.php";
+    include_once "api/api_movie_id.php";
+    include_once "api/api_movie_video_id.php";
+    include_once "api/api_movie_similar.php";
+    include_once "api/api_tunefind.php";
     $title = "Detail Movie (".$movie_id->original_title.")";
-    include "header.php";
+    include_once "header.php";
+  include "api/api_movie_id.php";
+  include "api/api_movie_video_id.php";
+  include "api/api_movie_similar.php";
+  $title = "Detail Movie (".$movie_id->original_title.")";
+  include "header.php";
 ?>
     <?php 
     if(isset($_GET['id'])){
