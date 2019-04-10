@@ -44,25 +44,57 @@
             ?>
         </p>
       </div>
-            
+      <?php 
+        foreach($movie_video_id->results as $key => $video){
+            if($key === 0)
+            {
+              echo '<iframe width="560" height="315" src="'."https://www.youtube.com/embed/".$video->key.'" frameborder="0" allowfullscreen></iframe>';
+            }
+        }
+      ?>
+    </div> 
+
+    <img src="<?php echo $imgurl_2 ?><?php echo $movie_id->poster_path ?>">
+    <h3>Casting</h3>
+    
+    <p>acteur: <span> 
+      <?php
+        foreach($credits->cast as $key => $_cast){
+          if($key <= 6)
+          {
+            echo $_cast->name.", ";
+          }
+        }
+      ?>
+    </span></p>
+    <h3>Similar Movies</h3>
+      <ul>
+      <?php
+        $count = 4;
+        $output=""; 
+        foreach($movie_similar_id->results as $sim){
+          $count--;
+          $output.='<li><a href="movie.php?id='.$sim->id.'"><img src="http://image.tmdb.org/t/p/w300'.$sim->backdrop_path.'"><p>'.$sim->title.'</p></a></li>';
+          if($count <=0){
+            break;
+  
+          }
+        }
+        echo $output;
+      ?>
+      </ul>
+
       <div>
-          <p>title</p>
-          <?php
-            // echo '<pre>';
-            // print_r($result);
-            // echo '</pre>';
-          ?>
+          <p>title
           <?php foreach ($result->songs as $_song): ?>
-              <h1> <?= $_song->name ?></h1>
+              <h1> <?= $_song->name ?> </h1>
               <h2> <?= $_song->artist->name?></h2>
-              <?php echo '<a href="'.$_song->stores[1]->url.'">Listen on Spotify</a>'?> 
-              <?php
-              ?>
+              <?php echo '<a href="'.$_song->stores[1]->url.'">Listen on your platform</a>'?> 
           <?php endforeach; ?>  
           </p>
           <p>artiste</p>
       </div>
-    
+
     <?php 
     } else{
       echo "No similar movie";
