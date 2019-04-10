@@ -28,6 +28,11 @@
     display: inline-block;
 }
 
+h1 .sitename
+{
+    color:#FAB301;
+}
+
 .header_links
 {
     width: 100vw;
@@ -61,5 +66,10 @@
 .right_links a
 {
     padding-left:5vw;
+    color:#FAB301;
 }
 
+p a
+{
+    color:#FAB301;
+}

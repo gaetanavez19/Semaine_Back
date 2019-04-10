@@ -26,8 +26,7 @@
             <a href="upcoming.php">Upcoming</a>
           </div>
           <div class="right_links">
-            <a href="#">Watchlist</a>
-            <a href="#">Account</a>
+            <a href="login/index.php">Watchlist</a>
           </div>
         </div>
     </div>

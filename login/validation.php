@@ -22,9 +22,9 @@
         ];
     }
     $link = [
-        '/Semaine_Back/wishlist.php',
-        '/Semaine_Back/login/index.php',
-        '/Semaine_Back/wishlist.php',
+        '../wishlist.php',
+        '../login/index.php',
+        '../wishlist.php',
     ];
     $linkName = [
         'Browse',
