@@ -81,15 +81,25 @@
           ?>
           </ul>
       </div>
+            
       <div>
-          <p>title
+          <p>title</p>
+          <?php
+            // echo '<pre>';
+            // print_r($result);
+            // echo '</pre>';
+          ?>
           <?php foreach ($result->songs as $_song): ?>
-              <h1> <?= $_song->name ?> </h1>
+              <h1> <?= $_song->name ?></h1>
               <h2> <?= $_song->artist->name?></h2>
+              <?php echo '<a href="'.$_song->stores[1]->url.'">Listen on Spotify</a>'?> 
+              <?php
+              ?>
           <?php endforeach; ?>  
           </p>
           <p>artiste</p>
       </div>
+
       <?php 
       } else{
         echo "No similar movie";

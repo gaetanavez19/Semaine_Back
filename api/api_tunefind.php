@@ -11,7 +11,6 @@ curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
 curl_setopt($ch, CURLOPT_USERPWD, "$login:$password");
 $result = curl_exec($ch);
 curl_close($ch);  
-echo $result;
 
 // Json decode
 $result = json_decode($result);
@@ -21,6 +20,6 @@ $result = json_decode($result);
 // echo '<pre>';
 // print_r($result);
 // echo '</pre>';
-// 
+
 
 ?>
