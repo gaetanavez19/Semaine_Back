@@ -5,6 +5,7 @@
     include_once "api/api_movie_id.php";
     include_once "api/api_movie_video_id.php";
     include_once "api/api_movie_similar.php";
+    include_once "api/api_tunefind.php";
     $title = "Detail Movie (".$movie_id->original_title.")";
     include_once "header.php";
 ?>
