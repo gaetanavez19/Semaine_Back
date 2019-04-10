@@ -5,6 +5,7 @@
     include_once "api/api_movie_video_id.php";
     include_once "api/api_movie_similar.php";
     include_once "api/api_tunefind.php";
+    include_once "api/api_movie_credits.php";
     $title = "Detail Movie (".$movie_id->original_title.")";
     include_once "header.php";
 
@@ -53,6 +54,9 @@
       ?>
     </div> 
     <img src="<?php echo $imgurl_2 ?><?php echo $movie_id->poster_path ?>">
+    <h3>Casting</h3>
+  
+ 
     <h3>Similar Movies</h3>
       <ul>
       <?php
