@@ -11,7 +11,7 @@
     <form action="search.php" method="get">
       <div class="search-box">
         <button type="submit"><img src="./images/search.svg" alt="search"></button>
-        <input type="search" name="search" placeholder="Ex : Aquaman" required>
+        <input type="search" name="search" placeholder="Ex : Aquaman" autocomplete="off" required>
       </div>
       <select name="channel" required>
         <option value="movie" selected="selected">Movie</option>
