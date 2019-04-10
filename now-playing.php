@@ -1,12 +1,12 @@
 <?php
   include "conf/info.php";
   $title="Playing Movies";
-  include_once "header.php";
+  include "header.php";
 ?>
 
     <h2>Playing Movies </h2>
     <?php
-      include_once "api/api_now.php";
+      include "api/api_now.php";
       $min = date('D M Y', strtotime($nowplaying->dates->minimum));
       $max = date('D M Y', strtotime($nowplaying->dates->maximum));
       echo "<span>from <span>". $min . "</span>, until <span>" . $max . "</span></p>";
@@ -21,5 +21,5 @@
     </ul>
 
 <?php
-  include_once "footer.php";
+  include "footer.php";
 ?>
