@@ -9,14 +9,14 @@ define('URL', 'http://localhost:8500/Semaine_Back/');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fontlibrary.org/face/bebas" rel="stylesheet" type="text/css" media="screen"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
-    <link href="style/style.css" rel="stylesheet">
-    <link href="style/header.css" rel="stylesheet">
+    <link href="<?= URL ?>style/style.css" rel="stylesheet">
+    <link href="<?= URL ?>style/header.css" rel="stylesheet">
     <link href="<?= URL ?>style/login.css" rel="stylesheet">
-    <link href="style/search.css" rel="stylesheet">
+    <link href="<?= URL ?>style/search.css" rel="stylesheet">
     <link href="<?= URL ?>style/login_validation.css" rel="stylesheet">
-    <link href="./style/popular&playing.css" rel="stylesheet">
-    <link href="./style/movie.css" rel="stylesheet">
-    <link href="./style/footer.css" rel="stylesheet">
+    <link href="<?= URL ?>style/popular&playing.css" rel="stylesheet">
+    <link href="<?= URL ?>style/movie.css" rel="stylesheet">
+    <link href="<?= URL ?>style/footer.css" rel="stylesheet">
 
     <title>
       <?php echo $title ?> - 
@@ -26,7 +26,7 @@ define('URL', 'http://localhost:8500/Semaine_Back/');
   <body>
     <div class="header">
         <h1>
-          <a class="sitename" href="index.php"><?php echo $sitename ?></a>
+          <a class="sitename" href="<?=URL?>index.php"><?php echo $sitename ?></a>
         </h1>
         <div class="header_links">
           <div class="left_links">
