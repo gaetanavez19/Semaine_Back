@@ -16,6 +16,7 @@ define('URL', 'http://localhost:8888/Semaine_Back/');
     <link href="<?= URL ?>style/login_validation.css" rel="stylesheet">
     <link href="<?= URL ?>style/popular&playing.css" rel="stylesheet">
     <link href="<?= URL ?>style/movie.css" rel="stylesheet">
+    <link href="<?= URL ?>style/comment.css" rel="stylesheet">
     <link href="<?= URL ?>style/footer.css" rel="stylesheet">
 
     <title>
