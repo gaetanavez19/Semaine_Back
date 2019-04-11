@@ -5,8 +5,16 @@
     justify-content: flex-start;
     height: 80px;
     align-items: center;
+<<<<<<< HEAD
     /* font-family: 'Open Sans', sans-serif; */
     box-shadow: 2px 1px 8px 1px #000000;
+=======
+    font-family: 'Open Sans', sans-serif;
+<<<<<<< HEAD
+    
+=======
+>>>>>>> a8bab152ea53b30bfe7dce2e4ab46f6380f9aeda
+>>>>>>> f06a4d14dc9d29736b867cdf166294dc7d2559a4
 } 
 
 @font-face
@@ -31,12 +39,13 @@
 
 h1 .sitename
 {
-    color:#FAB301;
+    color:#F8CA00;
 }
 
 .header_links
 {
     width: 100vw;
+    margin-top:0.5vw;
     display: flex;
     justify-content: space-between;
 }
