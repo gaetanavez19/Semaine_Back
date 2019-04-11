@@ -67,13 +67,15 @@
         </div>
       </div>
       <div class="container_soundtrack">
-        <div>
-              <h1 class="soundtrack_title" >Soundtrack</h1>
-              <?php if(!isset($result->error)):?>
-              <?php foreach ($result->songs as $_song): ?>
-                  <h1> <?= $_song->name ?> </h1>
-                  <h2> <?= $_song->artist->name?></h2>
-                  <?php echo '<a href="'.$_song->stores[1]->url.'">Listen on your platform</a>'?> 
+        <div class="sountrack_flex">
+          <h1 class="soundtrack_title" >Soundtrack</h1>
+          <?php if(!isset($result->error)):?>
+          <?php foreach ($result->songs as $_song): ?>
+          <img class="logo_play" src="./images/play-circle.svg" alt="search">
+                  <div class="sountrack_playlist"><h2> <?= $_song->name ?> </h2>
+                    <h3> <?= $_song->artist->name?></h3>
+                  <?php echo '<a class="artist" href="'.$_song->stores[1]->url.'">Listen on your platform</a>'?> 
+                  </div>
               <?php endforeach; ?>  
             <?php endif ?>  
         </div>
@@ -98,21 +100,21 @@
   
   
       <div class="container_casting">
-        <h3>Casting</h3>
+        <h1>Casting</h1>
         
-        <p>acteur: <span> 
+        <span><ul>
           <?php
             foreach($credits->cast as $key => $_cast){
               if($key <= 6)
               {
-                echo $_cast->name.", ";
+                echo "<li>$_cast->name</li> ";
               }
             }
-          ?>
+          ?></ul>
         </span></p>
       </div>
       <div class="container_similarmovie">
-        <h3 class ="similarmovie_title" >Similar Movies</h3>
+        <h1 class ="similarmovie_title" >Similar Movies</h1>
           <div class="similarmovie">
           <?php
             $count = 4;
