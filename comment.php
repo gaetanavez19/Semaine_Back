@@ -3,13 +3,11 @@
         
         require_once './database/database.php';
 
-
-
         // Repasser les GET en POST 
         if(!empty($_POST))
         {
             $data = [
-                'moviename' => trim($_POST['moviename']),
+                'moviename' => $movie_id->original_title,
                 'username' => trim($_POST['username']),
                 'date' => time(),
                 'title' => trim($_POST['title']),
@@ -29,6 +27,7 @@
         $query = $pdo->query('SELECT * FROM comments WHERE moviename="'.$movie_id->original_title.'"'); // Associate $moviename to movie displayed in page
         $comments = $query->fetchAll();
 
+
 ?>
 
 <!DOCTYPE html>
@@ -42,12 +41,12 @@
 <body>
         <div class="row">
             <div class="col-md-6">
-                <form action="comment.php" method="post">
+                <form action="#" method="post">
                     <p>
                         <label for="comment">Commentaire :</label><br>
-                        <input type="text" name="username" id="username" class="username-comment">
-                        <input type="text" name="title" id="title" class="title-comment">
-                        <textarea name="comment" id="comment" cols="30" rows="5" class="comments"></textarea><br>
+                        <input type="text" name="username" id="username" class="username-comment" placeholder="Entrez un pseudo">
+                        <input type="text" name="title" id="title" class="title-comment" placeholder="titre">
+                        <textarea name="comment" id="comment" cols="30" rows="5" class="comments" placeholder="text"></textarea><br>
                         <button type="submit" class="btn btn-success">Envoyer</button>
                     </p>
                 </form>
