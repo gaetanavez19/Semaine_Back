@@ -216,11 +216,22 @@ span
     width:5%;
 }
 
+.comments
+{
+    width:80vw;
+    margin-left:15vw;
+}
+
 h1
 {
     font-family: 'BebasNeueRegular'; 
     font-weight: normal; 
     font-style: normal;
+}
+
+li
+{
+    color:white;
 }
 
 ul

@@ -56,12 +56,12 @@
                 <h2 class="other_comments">Other comments :</h2>
             
                 <?php foreach ($comments as $_comment): ?>
-            
-                <h4><?= $_comment->username ?></h4>
-                <time><?= date('Y/m/d H:i', $_comment->date) ?></time>
-                <span><?= $_comment->title ?></span>
-                <p><?= $_comment->comment ?></p>
-                    
+                <div class="comment_user">
+                    <h4><?= $_comment->username ?></h4>
+                    <time><?= date('Y/m/d H:i', $_comment->date) ?></time>
+                    <span><?= $_comment->title ?></span>
+                    <p><?= $_comment->comment ?></p>
+                </div> 
                 <?php endforeach; ?>
             </div>
         </div>

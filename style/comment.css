@@ -36,7 +36,7 @@ input[type=submit] {
   
   .container_comments {
     display:flex;
-    margin: 15vh auto;
+    margin: 15vh auto -17vh;
     width: 55vw;
     height: 50vh;
     border-radius: 10px;
@@ -52,6 +52,23 @@ input[type=submit] {
 
   .other_comments{
     color: #FAB301;
-    margin-left: 15vw; 
     font-size:2em;
+  }
+
+
+  .comment_user
+  {
+    width:55vw;
+    margin-left:8vw;
+    background-color:#2C2B2B;
+    padding:15px;
+    margin-bottom:5vh;
+  }
+
+  h4
+  {
+    color:#FAB301;
+    font-family: 'BebasNeueRegular'; 
+    font-weight: normal; 
+    font-style: normal;
   }
