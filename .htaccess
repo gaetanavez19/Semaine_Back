@@ -1,7 +1,13 @@
-RewriteEngine Off
+RewriteEngine On
 
-RewriteRule ^contact$ ./pages/tapage.php
-RewriteRule ^about-us|a-propos$ ./pages/tapage.php
-RewriteRule ^wishlist$ ./pages/wishlist.php
-RewriteRule ^$ ./pages/index.php
+RewriteRule ^popular$ ./popular.php
+RewriteRule ^nowplaying$ ./now-playing.php
+RewriteRule ^now-playing$ ./now-playing.php
+RewriteRule ^upcoming$ ./upcoming.php
+RewriteRule ^wishlist$ ./login/login.php
+RewriteRule ^checkmovies$ ./index.php
+
+
+
+
 
