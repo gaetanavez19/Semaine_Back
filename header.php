@@ -8,6 +8,7 @@
     <link href="style/style.css" rel="stylesheet">
     <link href="style/header.css" rel="stylesheet">
     <link href="./style/footer.css" rel="stylesheet">
+    <link href="./style/movie.css" rel="stylesheet">
 
     <title>
       <?php echo $title ?> - 
