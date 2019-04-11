@@ -69,8 +69,8 @@ h1 .sitename
 {
     width: 87%;
     height: 1.8vw;  
-    border-radius: 7px;
-    border-style: none;  
+    border-radius: 6px;
+    border-style: 2px solid #ffffff;  
     background-color: #5A5959; 
     color: #ffffff; 
     padding-left: 1vw; 
