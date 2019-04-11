@@ -18,7 +18,8 @@
     border-radius: 1px;
     float: left;
     width: 230px;
-    height: 524px;
+    height: 424px;
+    overflow: hidden;
     box-shadow: 2px 2px 4px 1px rgb(19, 19, 19);
   }
 
@@ -61,7 +62,8 @@
 
   .title_popular_playing
   {
-    color: #FAB301
+    color: #FAB301;
+    text-align: center
   }
 
   .text_popular_playing
@@ -72,4 +74,12 @@
   .playing_movie_date{
       color: rgb(255, 255, 255);
       margin: 15px;
+  }
+
+  .date_text{
+    color: #FAB301;
+  }
+
+  .date{
+    color: rgb(255, 255, 255);
   }

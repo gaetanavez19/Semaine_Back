@@ -100,17 +100,26 @@
       <div class="container_casting">
         <h3>Casting</h3>
         
-        <p>acteur: <span> 
+        <p>acteur: <span><ul>
           <?php
             foreach($credits->cast as $key => $_cast){
               if($key <= 6)
               {
-                echo $_cast->name.", ";
+                echo '
+                <a href="https://fr.wikipedia.org/wiki/'.$_cast->name.'" target="_blank">
+                <li>'.$_cast->name.'</li>
+                </a>';
               }
             }
-          ?>
+          ?></ul>
         </span></p>
       </div>
+
+      <?php
+        include "comments.php";
+      ?>
+
+
       <div class="container_similarmovie">
         <h3 class ="similarmovie_title" >Similar Movies</h3>
           <div class="similarmovie">
