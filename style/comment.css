@@ -1,3 +1,57 @@
-.az{
-    margin: 166px;
+input[type=text] {
+    width: 49%;
+    padding: 12px;
+    background-color: #2C2B2B;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+
+.comments_text{
+    width: 55vw;
+    padding: 12px;
+    background-color: #2C2B2B;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
 }
+  
+input[type=submit] {
+    background-color: #2C2B2B;
+    color: #FAB301;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #FAB301;
+    color: #2C2B2B
+  }
+  
+  .container_comments {
+    display:flex;
+    margin: 15vh auto;
+    width: 55vw;
+    height: 50vh;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .title_container_comments {
+    color: #FAB301;
+    position:absolute;
+    margin: -13vh;
+    font-size:2em;
+  }
+
+  .other_comments{
+    color: #FAB301;
+    margin-left: 15vw; 
+    font-size:2em;
+  }

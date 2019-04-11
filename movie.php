@@ -116,12 +116,6 @@
           ?></ul>
         </span></p>
       </div>
-
-      <?php
-        include "comment.php";
-      ?>
-
-
       <div class="container_similarmovie">
         <h1 class ="similarmovie_title" >Similar Movies</h1>
           <div class="similarmovie">
@@ -149,8 +143,9 @@
         echo "No similar movie";
       }
       ?>
-  
+
     <?php
+    include "comment.php";
     include 'footer.php';
   ?>
   
