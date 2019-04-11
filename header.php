@@ -41,7 +41,7 @@ define('URL', 'http://localhost:8888/Semaine_Back/');
                <input type="search" name="search" placeholder="Ex : Aquaman" autocomplete="off" required>
               </div>    
             </form>
-            <a href="login/index.php">Watchlist</a>
+            <a href="login/login.php">Watchlist</a>
           </div>
         </div>
     </div>
