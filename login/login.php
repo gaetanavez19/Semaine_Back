@@ -19,7 +19,7 @@
                     </div>
                     <br>
                     <div>
-                        <input type="submit">
+                        <input type="submit"  value="Send">
                     </div>
                 </form>
             </div>
@@ -36,7 +36,7 @@
                     </div>
                     <br>
                     <div>
-                        <input type="submit">
+                        <input type="submit" value="Send">
                     </div>
                 </form>
             </div>
