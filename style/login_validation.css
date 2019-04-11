@@ -1,0 +1,62 @@
+.body_validation
+{
+     background: #222222;
+     height: 90vh;
+}
+
+.container_validation 
+{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container_validation .validation
+{
+    background: #2C2B2B;
+    border-radius: 6px;
+    padding: 1vh;
+    width: 37vh;
+    height: 33vh;
+    box-shadow: 2px 2px 4px 1px rgb(19, 19, 19);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container_validation .validation h3
+{
+    font-family: 'BebasNeueRegular'; 
+    color: #FAB301;
+    text-align: center;
+    margin: 0;
+
+}
+
+.container_validation .validation h2
+{
+    font-family: 'BebasNeueRegular'; 
+    color: #FAB301;
+    text-align: center;
+    margin: 0;
+
+}
+
+.container_validation .validation h3
+{
+    font-size: 1.7em;
+}
+
+.container_validation .validation h2
+{
+    font-size: 1.7em;
+}
+
+/* .container_validation .validation div:hover a
+{
+    background: red;
+} */

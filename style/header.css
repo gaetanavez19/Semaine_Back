@@ -6,6 +6,7 @@
     height: 80px;
     align-items: center;
     /* font-family: 'Open Sans', sans-serif; */
+    box-shadow: 2px 1px 8px 1px #000000;
 } 
 
 @font-face

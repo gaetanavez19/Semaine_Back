@@ -1,6 +1,9 @@
 <?php
 
     include '../database/database.php';
+    include "../conf/info.php";
+    $title="Validation";
+    require "../header.php";
 
     session_start();
 
@@ -8,7 +11,7 @@
     if(isset($_POST['usernameIn']))
     {
         $message = [
-            'Logged in succesfully, you can make your WatchList '.$_POST['usernameIn'].'.',
+            'Logged in succesfully '.$_POST['usernameIn'].'.',
             'Username or password is incorrect.',
             'Signed up succesfully',
         ];
@@ -27,9 +30,9 @@
         '../wishlist.php',
     ];
     $linkName = [
-        'Browse',
-        'Back',
-        'Browse',
+        'Go to your watchList',
+        'Try again or Sign Up',
+        'Go to your watchList',
     ];
 
     // Sign In
@@ -116,16 +119,19 @@
     <link rel="stylesheet" href="../style.css">
     <title>Validation</title>
 </head>
-<body>
-    
-    <div class="container">
-        <a href="<?= $link[$j] ?>" class="login validationBox">
-            <h3><?= $message[$j] ?></h3>
-            <br>
-            <br>
-            <h2><?= $linkName[$j] ?></h2>
-        </a>
+<body class="body_validation">
+    <div class="container_validation">
+        <div class="validation">
+            <a href="<?= $link[$j] ?>" class="login validationBox">
+                <h3><?= $message[$j] ?></h3>
+                <br>
+                <br>
+                <h2><?= $linkName[$j] ?></h2>
+            </a>
+        </div>
     </div>
-
+<?php
+  include "../footer.php";
+?>
 </body>
 </html>

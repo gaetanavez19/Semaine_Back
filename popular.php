@@ -3,15 +3,24 @@
   $title="Popular Movies";
   include "header.php";
 ?>
-    <h2>Popular Movies</h2>
-    <ul>
+  <div class="popular_movies_container">
+    <h2 class="popular_movies_category">Popular Movies</h2>
       <?php
         include "api/api_popular.php";
         foreach($popular->results as $p){
-          echo '<li><a href="movie.php?id=' . $p->id . '"><img src="'.$imgurl_1.''. $p->poster_path . '"><h2>' . $p->original_title . " (" . substr($p->release_date, 0, 4) . ")</h2><p> Rate : " . $p->vote_average . " | Vote : " . $p->vote_count . " | Popularity : " . round($p->popularity) . "</p></a></li>";
+          echo '
+           <div class="gallery">
+             <a href="movie.php?id=' . $p->id . '">
+             <img src="'.$imgurl_1.''. $p->poster_path . '">
+              <div class="info_popular_playing">
+               <h2 class="title_popular_playing">' . $p->original_title . " (" . substr($p->release_date, 0, 4) . ")</h2>
+               <p class='text_popular_playing'> Rate : " . $p->vote_average . " <br> Vote : " . $p->vote_count . " <br> Popularity : " . round($p->popularity) . "</p>
+              </div>
+             </a>
+           </div>";
         }
       ?>
-    </ul>
+  </div>
 <?php
-  include "footer.php";
+    include "footer.php";
 ?>

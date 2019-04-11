@@ -1,23 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>login</title>
-</head>
-<body>
-<div class="container">
+<?php
+  include "../conf/info.php";
+  $title="Login";
+  require "../header.php";
+?>
+
+<body class="body_login">
+    <div class="container_login">
         <div class="login">
             <div class="signIn">
                 <h3>SIGN IN</h3>
                 <form action='validation.php' method="POST">
                     <br>
                     <div>
-                        <input required name="usernameIn" type="text" placeholder="username">
+                        <input required name="usernameIn" type="text" placeholder="Username">
                     </div>
                     <div>
-                        <input required name="passwordIn" type="password" placeholder="password">
+                        <input required name="passwordIn" type="password" placeholder="Password">
                     </div>
                     <br>
                     <div>
@@ -25,15 +23,16 @@
                     </div>
                 </form>
             </div>
+            <div class="or"><h1>OR</h1></div>
             <div class="signUp">
                 <h3>SIGN UP</h3>
                 <form action="validation.php" method="POST">
                     <br>
                     <div>
-                        <input required name="usernameUp" type="text" placeholder="username">
+                        <input required name="usernameUp" type="text" placeholder="Username">
                     </div>
                     <div>
-                        <input required name="passwordUp" type="password" placeholder="password">
+                        <input required name="passwordUp" type="password" placeholder="Password">
                     </div>
                     <br>
                     <div>
@@ -42,5 +41,9 @@
                 </form>
             </div>
         </div>
+    </div>
+<?php
+  include "../footer.php";
+?>
 </body>
 </html>

@@ -1,3 +1,7 @@
+<?php
+define('URL', 'http://localhost:8500/Semaine_Back/');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,6 +11,11 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
     <link href="style/style.css" rel="stylesheet">
     <link href="style/header.css" rel="stylesheet">
+    <link href="<?= URL ?>style/login.css" rel="stylesheet">
+    <link href="style/search.css" rel="stylesheet">
+    <link href="<?= URL ?>style/login_validation.css" rel="stylesheet">
+    <link href="./style/popular&playing.css" rel="stylesheet">
+    <link href="./style/movie.css" rel="stylesheet">
     <link href="./style/footer.css" rel="stylesheet">
 
     <title>
@@ -24,9 +33,18 @@
             <a href="popular.php">Popular</a>
             <a href="now-playing.php">Now Playing</a>
             <a href="upcoming.php">Upcoming</a>
+
+            <form action="search.php" method="get">
+              <div class="search-box">
+                <button type="submit"></button>
+               <input type="search" name="search" placeholder="Ex : Aquaman" autocomplete="off" required>
+              </div>    
+            </form>
           </div>
           <div class="right_links">
             <a href="login/index.php">Watchlist</a>
           </div>
         </div>
     </div>
+
+

@@ -1,13 +1,13 @@
 <?php
 $input=$_GET['search'];
-$search=$input;
+$search=str_replace(' ', '-', $input);
 include "conf/info.php";
 $title = 'Search | '.$input;
 include "header.php";
 include "api/api_search.php";
 ?>
-	<p>Results for: <?php echo $input?></p>
-    <div>
+	<div class="popular_movies_container">
+		<h2 class="popular_movies_category">Results for: <?php echo $input?></h2>
 <?php
 	
         foreach($search->results as $results){
@@ -15,40 +15,24 @@ include "api/api_search.php";
 			$id = $results->id;
 			$release = $results->release_date;
 			$poster = $results->poster_path ;
-			if (empty($poster)){
-				$poster =  dirname($_SERVER['PHP_SELF']).'/image/not_found.jpg';
-				} 
+			if (empty($poster) && is_null($poster)){
+				$poster =  dirname($_SERVER['PHP_SELF']).'/images/no_image.png';
+			}
 			else {
 				$poster = 'http://image.tmdb.org/t/p/w300'.$poster;
 				 }
-			echo '<li><a href="movie.php?id=' . $id . '"><img src="'.$poster.'"><p>'.$title.'</p></a></li>';
+			echo '
+			<div class="gallery_search">
+				<a href="movie.php?id=' . $id . '">
+				  <img src="'.$poster.'">
+				  <div class="info_popular_playing">
+					  <p>'.$title.'</p>
+				  </div>  
+				</a>
+			</div>';
 		}
 		
-
-	// elseif($channel=="tv"){
-    //     foreach($search->results as $results){
-	// 		$title 		= $results->original_name;
-	// 		$id 		= $results->id;
-	// 		$release	= $results->first_air_date;
-	// 		if (!empty($release) && !is_null($release)){
-	// 			$tempyear 	= explode("-", $release);
-	// 			$year 		= $tempyear[0];
-	// 			if (!is_null($year)){
-	// 				$title = $title.' ('.$year.')';
-	// 			}
-	// 		}
-	// 		$poster 	= $results->backdrop_path;
-	// 		if (empty($poster) && is_null($poster)){
-	// 			$poster = $pathloc.'image/no-backdrop.png';
-	// 		} 
-	// 		else {
-	// 			$poster = 'http://image.tmdb.org/t/p/w300'.$poster;
-	// 		}
-	// 		echo '<li><a href="tvshow.php?id=' . $id . '"><img src="'.$poster.'"><h4>'.$title.'</h4></a></li>';
-	// 		}
-	// 	}
-		
-    //     ?>
+       ?>
 		</div>
 		
  <?php
