@@ -143,14 +143,7 @@
             echo $output;
           ?>
         </div>
-      </div>
-
-      <?php
-        include "comment.php";
-      ?>
-
-
-  
+      </div>  
       <?php 
       } else{
         echo "No similar movie";
