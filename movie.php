@@ -19,7 +19,6 @@
       <form action="./wishlist.php" method="post">
         <input type="hidden" name="username" value="<?=$_SESSION['username'] ?>">
         <input type="hidden" name="movieId" value="<?=$movie_id->original_title?>">
-        <button type="submit"><img src="./images/heart.svg" alt="add_to_watchlist"> Add to watchlist</button>
       </form>
           
     <?php 
@@ -34,7 +33,10 @@
       <img src="<?php echo $imgurl_2 ?><?php echo $movie_id->poster_path ?>">
         <div class="movie_top_description">
           <div class="description">
-            <a class="movie_addtowishlist" href="#">Add to Watchlist</a>
+            <div class="button_submit">
+              <button type="submit"><img src="./images/heart.svg" alt="add_to_watchlist"></button>
+              <a class="movie_addtowishlist" href="#">Add to Watchlist</a>
+            </div>
             <h1 class="movie_title"><?php echo $movie_id->original_title ?></h1>
             <p class="movie_tagline"> "<?php echo $movie_id->tagline ?> "</p>
             <?php $rel = date('d F Y', strtotime($movie_id->release_date)); echo $rel ?>
