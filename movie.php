@@ -48,9 +48,9 @@
       <div>
           <p>title</p>
           <?php
-            // echo '<pre>';
-            // print_r($result);
-            // echo '</pre>';
+            echo '<pre>';
+            print_r($result);
+            echo '</pre>';
           ?>
           <?php foreach ($result->songs as $_song): ?>
               <h1> <?= $_song->name ?></h1>

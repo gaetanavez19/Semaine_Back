@@ -3,8 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style/style.css" rel="stylesheet">
-    <link href="style/header.css" rel="stylesheet">
+    <link href="https://fontlibrary.org/face/bebas" rel="stylesheet" media="screen" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css" />
+    <link href="style/style.css" rel="stylesheet"/>
+    <link href="style/header.css" rel="stylesheet"/>
+    <link href="style/footer.css" rel="stylesheet"/>
     <title>
       <?php echo $title ?> - 
       <?php echo $sitename ?>
