@@ -1,4 +1,10 @@
+<<<<<<< HEAD
      <footer>
+=======
+
+
+    <footer>
+>>>>>>> a8bab152ea53b30bfe7dce2e4ab46f6380f9aeda
       <div class="container">
         <div class="container2">
           <div class="text">

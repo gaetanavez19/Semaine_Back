@@ -39,6 +39,12 @@ body
     margin: 0 auto;
 }
 
+.text a
+{
+    color:white;
+    text-decoration: none;
+}
+
 .mention
 {
     width: 400px;
@@ -53,8 +59,13 @@ body
     margin-right: 40px;
 }
 
-a
+a p
 {
     color:#FAB301;
+    text-decoration: none;
+}
+
+a
+{
     text-decoration: none;
 }

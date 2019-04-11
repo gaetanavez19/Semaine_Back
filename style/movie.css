@@ -1,0 +1,162 @@
+body
+{
+    background-color:#222222;
+    color:white;
+}
+
+h2 a
+{
+    color:#FAB301;
+}
+
+
+
+
+
+
+.container_soundtrack
+{
+    margin: 15vh auto;
+    overflow:scroll;
+    width: 55vw;
+    height: 50vh;
+    border:1px solid black;
+    border-radius: 10px;
+}
+
+
+.container_casting
+{
+    background:blue;
+    margin-left: 3vw;
+
+}
+
+.container_similarmovie
+{
+    margin-left: 3vw;
+
+}
+
+.container_video
+{
+    width:100%;
+}
+
+.video
+{
+    width:45vw;
+    margin:18vh auto;
+    margin-bottom:10vh;
+}
+
+/************************************************************************/
+
+
+
+.movie_container
+{
+    margin-left: 10vw;
+    margin-top: 3vw;
+    display:flex;
+}
+
+.movie_title
+{
+    color: #FAB301;
+    font-size: 46px;
+}
+
+.movie_tagline
+{
+    font-style: italic;
+    font-size: 20px;
+
+}
+
+.movie_overview
+{
+    font-size: 18px;
+    width:90%;
+}
+
+.movie_description
+{
+    color: gray;
+}
+
+.movie_top_description
+{
+    width: 100%;
+    margin-left:3vw;
+}
+
+.movie_addtowishlist
+{
+    color: #FAB301;
+    position:absolute;
+    margin-left:54vw;
+    margin-top:1vw;
+}
+
+
+
+
+
+.vote_green
+{
+    color: #FAB301;
+}
+
+
+h2
+{
+    font-family: 'BebasNeueRegular'; 
+    font-weight: normal; 
+    font-style: normal;
+}
+
+a
+{
+    color:#FAB301;
+}
+
+
+span
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.yellow_title
+{
+    color: #FAB301;
+}
+
+.soundtrack_title
+{
+    position:absolute;
+    margin-top:-10vh;
+    margin-left:-8vw;
+    color:#FAB301;
+}
+
+.trailer_title
+{
+    position:absolute;
+    color:#FAB301;
+    margin-top:-10vh;
+    margin-left:-13vw;
+}
+
+.similarmovie
+{
+    display:flex;
+    margin:0 auto;
+    margin-bottom:3vw;
+    justify-content: space-around;
+}
+
+.similarmovie_title
+{
+    color:#FAB301;
+}
