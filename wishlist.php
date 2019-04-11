@@ -1,7 +1,7 @@
 <?php 
-    require './database/database.php';
     require 'header.php';
-    require 'footer.php';
+    
+
 
     //  // recuper toutes les données
 
@@ -23,11 +23,13 @@
 
     //  $query = $pdo->query('SELECT * FROM watchlist WHERE username="'.$_SESSION['username'].'"');
     //  $movieID = $query->fetchAll();
-    //  echo '<pre>';
-    //  print_r($movieID);
-    //  echo '</pre>';
 ?>
+
 <div>
 <h1>WATHCLIST</h1>
 </div>
+
+<?php
+require 'footer.php';
+?>
 
