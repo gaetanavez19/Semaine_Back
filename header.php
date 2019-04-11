@@ -27,7 +27,7 @@ define('URL', 'http://localhost:8888/Semaine_Back/');
   <body>
     <div class="header">
         <h1>
-          <a class="sitename" href="<?=URL?>index.php"><?php echo $sitename ?></a>
+          <a class="sitename" href="<?=URL?>index.php">Checkmovie</a>
         </h1>
         <div class="header_links">
           <div class="left_links">
