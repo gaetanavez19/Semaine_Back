@@ -107,12 +107,21 @@
             foreach($credits->cast as $key => $_cast){
               if($key <= 6)
               {
-                echo "<li>$_cast->name</li> ";
+                echo '
+                <a href="https://fr.wikipedia.org/wiki/'.$_cast->name.'" target="_blank">
+                <li>'.$_cast->name.'</li>
+                </a>';
               }
             }
           ?></ul>
         </span></p>
       </div>
+
+      <?php
+        include "comments.php";
+      ?>
+
+
       <div class="container_similarmovie">
         <h1 class ="similarmovie_title" >Similar Movies</h1>
           <div class="similarmovie">
