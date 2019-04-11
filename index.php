@@ -6,7 +6,7 @@
   <main class="main-container">
     <div class="text-container">
       <h2>Let's CheckMovies!</h2>
-      <span>All the informations about your favorite movies, the actors and much more...</span>
+      <span>All the informations about your favourite movies, the actors and much more...</span>
     </div>
     <form action="search.php" method="get">
       <div class="search-box">
