@@ -30,9 +30,9 @@ define('URL', 'http://localhost:8888/Semaine_Back/');
         </h1>
         <div class="header_links">
           <div class="left_links">
-            <a href="popular.php">Popular</a>
-            <a href="now-playing.php">Now Playing</a>
-            <a href="upcoming.php">Upcoming</a>
+            <a href="<?=URL?>popular.php">Popular</a>
+            <a href="<?=URL?>now-playing.php">Now Playing</a>
+            <a href="<?=URL?>upcoming.php">Upcoming</a>
           </div>
           <div class="right_links">
             <form action="search.php" method="get">
@@ -41,7 +41,7 @@ define('URL', 'http://localhost:8888/Semaine_Back/');
                <input type="search" name="search" placeholder="Ex : Aquaman" autocomplete="off" required>
               </div>    
             </form>
-            <a href="login/login.php">Watchlist</a>
+            <a href="l<?=URL?>ogin/login.php">Watchlist</a>
           </div>
         </div>
     </div>
