@@ -116,12 +116,6 @@
           ?></ul>
         </span></p>
       </div>
-
-      <?php
-        include "comments.php";
-      ?>
-
-
       <div class="container_similarmovie">
         <h1 class ="similarmovie_title" >Similar Movies</h1>
           <div class="similarmovie">
@@ -143,8 +137,13 @@
             echo $output;
           ?>
         </div>
-  
       </div>
+
+      <?php
+        include "comment.php";
+      ?>
+
+
   
       <?php 
       } else{
