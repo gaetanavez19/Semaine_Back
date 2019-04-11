@@ -12,8 +12,9 @@
         echo "<p class='playing_movie_date'>
         <span>from <span>". $min . "</span>,
         until <span>" . $max . "</span></p>";
+        
       ?>
-      
+
         <?php
 
           foreach($nowplaying->results as $p){
@@ -32,7 +33,7 @@
             </div>";
           }
         ?>
-      </div>
+    </div>
     
 <?php
 include "footer.php";

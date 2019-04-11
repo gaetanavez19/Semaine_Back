@@ -9,32 +9,25 @@
       $title = "Detail Movie (".$movie_id->original_title.")";
       include "header.php";
       require './database/database.php';
-  
+
+      session_start();
   ?>
       <?php 
       if(isset($_GET['id'])){
       $id_movie = $_GET['id']; 
       ?>
-          <button type="submit"><img src="./images/heart.svg" alt="add_to_watchlist"> Add to watchlist</button>
+      <form action="./wishlist.php" method="post">
+        <input type="hidden" name="username" value="<?=$_SESSION['username'] ?>">
+        <input type="hidden" name="movieId" value="<?=$movie_id->original_title?>">
+        <button type="submit"><img src="./images/heart.svg" alt="add_to_watchlist"> Add to watchlist</button>
+      </form>
+          
     <?php 
 
 // Ajouter à la wishlist sur la base de données
 
      // mettre les données dans un tableau 
-     if(!empty($_POST))
-     {
-         $data = [
-             'movieID' => trim($_POST['movieID']),
-         ];   
-         // envoyer dans SQL
-         $prepare = $pdo->prepare('
-             INSERT INTO
-                 watchlist (movieID)
-             VALUES
-                 (:movieID)
-         ');
-         $prepare->execute($data);
-     }    
+       
 
     ?> 
       <div class="movie_container">
@@ -76,11 +69,13 @@
       <div class="container_soundtrack">
         <div>
               <h1 class="soundtrack_title" >Soundtrack</h1>
+              <?php if(!isset($result->error)):?>
               <?php foreach ($result->songs as $_song): ?>
                   <h1> <?= $_song->name ?> </h1>
                   <h2> <?= $_song->artist->name?></h2>
                   <?php echo '<a href="'.$_song->stores[1]->url.'">Listen on your platform</a>'?> 
               <?php endforeach; ?>  
+            <?php endif ?>  
         </div>
       </div>
   
@@ -126,7 +121,7 @@
               $count--;
               $output.='
                           <a href="movie.php?id='.$sim->id.'">
-                            <img src="http://image.tmdb.org/t/p/w300'.$sim->poster_path.'">
+                            <img class="movie_poster" src="http://image.tmdb.org/t/p/w300'.$sim->poster_path.'">
                             <p>'.$sim->title.'</p>
                           </a>';
               if($count <=0){

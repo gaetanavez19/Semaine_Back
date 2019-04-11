@@ -156,6 +156,17 @@ span
     justify-content: space-around;
 }
 
+.similarmovie .movie_poster
+{
+    position: relative;
+    margin: 15px;
+    background-color: #2C2B2B;
+    border: 12px solid #2C2B2B;
+    border-radius: 1px;
+    float: left;
+    box-shadow: 2px 2px 4px 1px rgb(19, 19, 19);
+}
+
 .similarmovie_title
 {
     color:#FAB301;
