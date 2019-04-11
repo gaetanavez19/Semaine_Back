@@ -1,5 +1,5 @@
 <?php
-define('URL', 'http://localhost:8500/Semaine_Back/');
+define('URL', 'http://localhost:8888/Semaine_Back/');
 ?>
 
 <!DOCTYPE html>
