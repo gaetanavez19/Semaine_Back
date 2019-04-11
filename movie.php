@@ -116,7 +116,7 @@
       </div>
 
       <?php
-        include "comments.php";
+        include "comment.php";
       ?>
 
 
