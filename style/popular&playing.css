@@ -1,0 +1,75 @@
+.popular_movies_container{
+    margin-left: 5%;
+}
+
+.popular_movies_category
+{
+    font-size: 46px;
+    color: #FAB301;
+    margin: 15px;
+}
+
+
+.gallery {
+    position: relative;
+    margin: 15px;
+    background-color: #2C2B2B;
+    border: 12px solid #2C2B2B;
+    border-radius: 1px;
+    float: left;
+    width: 230px;
+    height: 524px;
+    box-shadow: 2px 2px 4px 1px rgb(19, 19, 19);
+  }
+
+  .gallery_search {
+    position: relative;
+    margin: 15px;
+    background-color: #2C2B2B;
+    border: 12px solid #2C2B2B;
+    border-radius: 1px;
+    float: left;
+    width: 230px;
+    height: 424px;
+    box-shadow: 2px 2px 4px 1px rgb(19, 19, 19);
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .gallery_search img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .desc {
+    padding: 25px;
+    text-align: center;
+  }
+
+  .info_popular_playing
+  {
+      padding: 0px 25px 0px 25px;
+  }
+
+  body
+  {
+    background-color: #222222;
+  }
+
+  .title_popular_playing
+  {
+    color: #FAB301
+  }
+
+  .text_popular_playing
+  {
+    color: rgb(255, 255, 255)
+  }
+
+  .playing_movie_date{
+      color: rgb(255, 255, 255);
+      margin: 15px;
+  }

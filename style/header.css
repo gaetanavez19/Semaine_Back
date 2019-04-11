@@ -1,0 +1,76 @@
+.header{
+    background-color: #1A1A1A;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    height: 80px;
+    align-items: center;
+    /* font-family: 'Open Sans', sans-serif; */
+    box-shadow: 2px 1px 8px 1px #000000;
+} 
+
+@font-face
+{
+    font-family: 'Open Sans', sans-serif;
+    src:url("https://fontlibrary.org/face/bebas");
+}
+
+.sitename{
+    font-size: 28px;
+    text-decoration: none;
+    margin-left: 18px;
+    font-family: 'BebasNeueRegular'; 
+    font-weight: normal; 
+    font-style: normal;
+}
+
+.header h1
+{
+    display: inline-block;
+}
+
+h1 .sitename
+{
+    color:#FAB301;
+}
+
+.header_links
+{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_links a
+{
+    padding-left: 5vw;
+    color:white;
+}
+
+.right_links
+{
+    display: flex;
+    justify-content: space-between;
+    width:auto;
+    padding-right: 5vw;
+    
+}
+
+.whiteLink
+{
+    width:50vw;
+    color:white;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.right_links a
+{
+    padding-left:5vw;
+    color:#FAB301;
+}
+
+p a
+{
+    color:#FAB301;
+}

@@ -1,0 +1,71 @@
+body
+{
+    margin:0;
+    margin-bottom: 0%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@font-face
+{
+    font-family: 'Open Sans', sans-serif;
+    src: url("https://fonts.googleapis.com/css?family=Open+Sans");
+}
+
+.container
+{
+    background: #1A1A1A;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container2
+{
+    display: inline-block;
+    width: 80%;
+    height:auto;
+    justify-content: center;
+
+}
+.text
+{
+    width: 800px;
+    padding:1.9vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color:white;
+    margin: 0 auto;
+}
+
+.text a
+{
+    color:white;
+    text-decoration: none;
+}
+
+.mention
+{
+    width: 400px;
+    display:flex;
+    width:auto;
+    margin: 0 200px;
+    justify-content: center;
+    color: white;
+}
+
+.checkmovie{
+    margin-right: 40px;
+}
+
+a p
+{
+    color:#FAB301;
+    text-decoration: none;
+}
+
+a
+{
+    text-decoration: none;
+}
