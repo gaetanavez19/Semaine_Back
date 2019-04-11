@@ -16,26 +16,39 @@ h2 a
 
 .container_soundtrack
 {
+    display:flex;
     margin: 15vh auto;
     overflow:scroll;
     width: 55vw;
     height: 50vh;
-    border:1px solid black;
     border-radius: 10px;
+    background-color:#2c2B2B;
 }
 
+.container_soundtrack h2
+{
+    color:#FAB301;
+}
+
+.container_soundtrack h2 h2
+{
+    color:white;
+}
 
 .container_casting
 {
-    background:blue;
-    margin-left: 3vw;
-
+    margin-left: 15vw;
 }
 
-.container_similarmovie
+.container_casting h1
 {
-    margin-left: 3vw;
+    color:#FAB301;
+}
 
+ul li
+{
+    padding:1vh;
+    list-style: none;
 }
 
 .container_video
@@ -121,6 +134,10 @@ a
     color:#FAB301;
 }
 
+a p
+{
+    margin-left:1vw;
+}
 
 span
 {
@@ -136,8 +153,24 @@ span
 {
     position:absolute;
     margin-top:-10vh;
-    margin-left:-8vw;
+    margin-left:-13vw;
     color:#FAB301;
+
+}
+
+.sountrack_playlist
+{
+    margin-right:10px;
+    width:21vw;
+}
+
+.sountrack_flex
+{
+    display:flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left:5vw;
 }
 
 .trailer_title
@@ -151,23 +184,46 @@ span
 .similarmovie
 {
     display:flex;
+    width:60vw;
     margin:0 auto;
     margin-bottom:3vw;
-    justify-content: space-around;
 }
 
 .similarmovie .movie_poster
 {
-    position: relative;
-    margin: 15px;
     background-color: #2C2B2B;
+    margin-left:10px;
     border: 12px solid #2C2B2B;
     border-radius: 1px;
-    float: left;
     box-shadow: 2px 2px 4px 1px rgb(19, 19, 19);
+    width:15vw;
 }
 
 .similarmovie_title
 {
     color:#FAB301;
+    margin-left:15vw;
+}
+
+.artist
+{
+    display: flex;
+    margin-bottom:5vh;
+}
+
+.logo_play
+{
+    width:5%;
+}
+
+h1
+{
+    font-family: 'BebasNeueRegular'; 
+    font-weight: normal; 
+    font-style: normal;
+}
+
+ul
+{
+    margin-bottom:8vh;
 }
