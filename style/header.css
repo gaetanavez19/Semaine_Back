@@ -1,5 +1,6 @@
 .header{
     background-color: #1A1A1A;
+    font-family: 'Open Sans', sans-serif; 
     position: relative;
     display: flex;
     justify-content: flex-start;
@@ -41,9 +42,16 @@ h1 .sitename
     justify-content: space-between;
 }
 
+.left_links
+{
+    width : 40%;
+    padding: 15px;  
+    display: flex; 
+    justify-content: space-around; 
+}
+
 .left_links a
 {
-    padding-left: 5vw;
     color:white;
 }
 
@@ -51,9 +59,29 @@ h1 .sitename
 {
     display: flex;
     justify-content: space-between;
-    width:auto;
+    width:20%;
     padding-right: 5vw;
+    padding-top: 1.1vw; 
     
+}
+.right_links form .search-box input
+{
+    width: 80%;
+    height: 1.4vw;  
+    border-radius: 14px;
+    border-style: none;  
+}
+.right_links form .search-box input::placeholder
+{
+    font-style: italic; 
+    opacity: 0.8; 
+}
+
+button
+{
+    background: none; 
+    border: none; 
+    box-shadow: none; 
 }
 
 .whiteLink
@@ -66,7 +94,7 @@ h1 .sitename
 
 .right_links a
 {
-    padding-left:5vw;
+    padding-left:2vw;
     color:#FAB301;
 }
 

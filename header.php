@@ -33,15 +33,14 @@ define('URL', 'http://localhost:8500/Semaine_Back/');
             <a href="popular.php">Popular</a>
             <a href="now-playing.php">Now Playing</a>
             <a href="upcoming.php">Upcoming</a>
-
+          </div>
+          <div class="right_links">
             <form action="search.php" method="get">
               <div class="search-box">
                 <button type="submit"></button>
                <input type="search" name="search" placeholder="Ex : Aquaman" autocomplete="off" required>
               </div>    
             </form>
-          </div>
-          <div class="right_links">
             <a href="login/index.php">Watchlist</a>
           </div>
         </div>
