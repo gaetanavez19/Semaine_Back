@@ -26,7 +26,7 @@
     }
     $link = [
         '../wishlist.php',
-        '../login/index.php',
+        '../login/login.php',
         '../wishlist.php',
     ];
     $linkName = [

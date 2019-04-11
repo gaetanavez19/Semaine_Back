@@ -26,7 +26,7 @@ define('URL', 'http://localhost:8500/Semaine_Back/');
   <body>
     <div class="header">
         <h1>
-          <a class="sitename" href="index.php"><?php echo $sitename ?></a>
+          <a class="sitename" href="<?=URL?>index.php"><?php echo $sitename ?></a>
         </h1>
         <div class="header_links">
           <div class="left_links">
@@ -42,7 +42,7 @@ define('URL', 'http://localhost:8500/Semaine_Back/');
             </form>
           </div>
           <div class="right_links">
-            <a href="login/index.php">Watchlist</a>
+            <a href="login/login.php">Watchlist</a>
           </div>
         </div>
     </div>
