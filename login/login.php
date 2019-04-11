@@ -19,7 +19,7 @@
                     </div>
                     <br>
                     <div>
-                        <input type="submit"  value="Send">
+                        <input  class="sumbit_login" type="submit"  value="Send">
                     </div>
                 </form>
             </div>
@@ -36,7 +36,7 @@
                     </div>
                     <br>
                     <div>
-                        <input type="submit" value="Send">
+                        <input class="sumbit_login" type="submit" value="Send">
                     </div>
                 </form>
             </div>
