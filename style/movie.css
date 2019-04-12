@@ -106,9 +106,19 @@ ul li
 
 .movie_addtowishlist
 {
+    color: rgb(255, 255, 255);
+    position:absolute;
+    transition: all .3s ease-out;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.movie_addtowishlist:hover
+{
     color: #FAB301;
     position:absolute;
 }
+
+
 
 
 

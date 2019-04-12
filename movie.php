@@ -26,7 +26,6 @@
           <div class="movie_top_description">
             <div class="description">
               <div class="button_submit">
-                <button type="submit"><img src="./images/heart.svg" alt="add_to_watchlist"></button>
                 <a class="movie_addtowishlist" href="#">Add to Watchlist</a>
               </div>
               <h1 class="movie_title"><?php echo $movie_id->original_title ?></h1>
