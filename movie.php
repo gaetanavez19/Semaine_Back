@@ -73,10 +73,12 @@
           <h1 class="soundtrack_title" >Soundtrack</h1>
           <?php if(!isset($result->error)):?>
           <?php foreach ($result->songs as $_song): ?>
-          <img class="logo_play" src="./images/play-circle.svg" alt="search">
+          <?php echo '<a class="logo_play" href="'.$_song->stores[1]->url.'" target="_blank">
+            <img class="" src="./images/play-circle.svg" alt="search">
+            </a>'?>   
                   <div class="sountrack_playlist"><h2> <?= $_song->name ?> </h2>
                     <h3> <?= $_song->artist->name?></h3>
-                  <?php echo '<a class="artist" href="'.$_song->stores[1]->url.'">Listen on your platform</a>'?> 
+
                   </div>
               <?php endforeach; ?>  
             <?php endif ?>  
