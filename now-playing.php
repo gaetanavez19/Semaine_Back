@@ -10,8 +10,8 @@
         $min = date('F l Y', strtotime($nowplaying->dates->minimum));
         $max = date('F l Y', strtotime($nowplaying->dates->maximum));
         echo "<p class='playing_movie_date'>
-      <span class='date_text'>From </span><span>". $min . "</span><br>
-      <span class='date_text'>until</span> <span class='date'>" . $max . "</span></p>";
+          <span class='date_text'>From </span><span>". $min . "</span><br>
+          <span class='date_text'>until</span> <span class='date'>" . $max . "</span></p>";
       ?>
       <?php
         foreach($nowplaying->results as $p)

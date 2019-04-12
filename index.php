@@ -13,11 +13,6 @@
         <button type="submit"><img src="./images/search.svg" alt="search"></button>
         <input type="search" name="search" placeholder="Ex : Aquaman" autocomplete="off" required>
       </div>
-      <!-- <select name="channel" required>
-        <option value="movie" selected="selected">Movie</option>
-        <option value="tv">TV Show</option>
-      </select> -->
-      
     </form>
   </main>
     

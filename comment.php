@@ -1,9 +1,6 @@
 <?php
+    require_once './database/database.php';
 
-        
-        require_once './database/database.php';
-
-        // Repasser les GET en POST 
         if(!empty($_POST))
         {
             $data = [
@@ -39,32 +36,31 @@
 </head>
 <body>
     <div class="container_comments">
-            <h2 class="title_container_comments" for="comment">Commentaire :</h2><br>  
-                <form action="#" method="post">
-                    <p>
-                        <input type="text" name="username" id="username" class="username-comment" placeholder="Your name">
-                        <input type="text" name="title" id="title" class="title-comment" placeholder="Title">
-                        <textarea name="comment" class="comments_text" cols="30" rows="5" class="comments" placeholder="text"></textarea><br>
-                        <input type="submit" value="Submit !" class="btn btn-success"></button>
-                    </p>
-                </form>
-            </div>
-               
+        <h2 class="title_container_comments" for="comment">Commentaire :</h2><br>  
+        <form action="#" method="post">
+            <p>
+                <input type="text" name="username" id="username" class="username-comment" placeholder="Your name">
+                <input type="text" name="title" id="title" class="title-comment" placeholder="Title">
+                <textarea name="comment" class="comments_text" cols="30" rows="5" class="comments" placeholder="text"></textarea><br>
+                <input type="submit" value="Submit !" class="btn btn-success"></button>
+            </p>
+        </form>
+    </div> 
 
-        <!-- Commentaires -->
-        <div class="comments">
-                <h2 class="other_comments">Other comments :</h2>
-            
-                <?php foreach ($comments as $_comment): ?>
-                <div class="comment_user">
-                    <h4><?= $_comment->username ?></h4>
-                    <time><?= date('Y/m/d H:i', $_comment->date) ?></time>
-                    <span><?= $_comment->title ?></span>
-                    <p><?= $_comment->comment ?></p>
-                </div> 
-                <?php endforeach; ?>
-            </div>
+    <!-- Print comments -->
+    <div class="comments">
+            <h2 class="other_comments">Other comments :</h2>
+        
+            <?php foreach ($comments as $_comment): ?>
+            <div class="comment_user">
+                <h4><?= $_comment->username ?></h4>
+                <time><?= date('Y/m/d H:i', $_comment->date) ?></time>
+                <span><?= $_comment->title ?></span>
+                <p><?= $_comment->comment ?></p>
+            </div> 
+            <?php endforeach; ?>
         </div>
+    </div>
     
 </body> 
 </html>
