@@ -54,7 +54,13 @@ h1 .sitename
     padding: 2vh;
     display: flex; 
     justify-content: space-around; 
+    transition: all 0.4s ease-in-out;
 }
+.left_links a:hover
+{
+    color: #FAB301;
+}
+
 
 .left_links a
 {
@@ -114,3 +120,9 @@ p a
 {
     color:#FAB301;
 }
+
+
+
+
+
+
