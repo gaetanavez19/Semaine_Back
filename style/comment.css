@@ -19,6 +19,11 @@ p input[type=text] {
     margin-top: 6px;
     margin-bottom: 16px;
 }
+
+p input[type=submit]
+{
+  font-size: 1em;
+}
   
 input[type=submit] {
     background-color: #2C2B2B;
@@ -69,6 +74,7 @@ input[type=submit] {
   h4
   {
     color:#FAB301;
+    font-size: 1.5em;
     font-family: 'BebasNeueRegular'; 
     font-weight: normal; 
     font-style: normal;

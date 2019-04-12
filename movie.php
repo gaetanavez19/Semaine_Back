@@ -114,7 +114,7 @@
             $output.='
                         <a href="movie.php?id='.$sim->id.'">
                           <img class="movie_poster" src="http://image.tmdb.org/t/p/w300'.$sim->poster_path.'">
-                          <p>'.$sim->title.'</p>
+                          <h2 class="poster_title">'.$sim->title.'</h2>
                         </a>';
             if($count <=0){
               break;

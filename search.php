@@ -28,7 +28,7 @@ include "api/api_search.php";
 			<a href="movie.php?id=' . $id . '">
 			  <img src="'.$poster.'">
 			  <div class="info_popular_playing">
-				  <p>'.$title.'</p>
+				  <h2>'.$title.'</h2>
 			  </div>  
 			</a>
 		</div>';

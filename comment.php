@@ -36,7 +36,7 @@
 </head>
 <body>
     <div class="container_comments">
-        <h2 class="title_container_comments" for="comment">Commentaire :</h2><br>  
+        <h2 class="title_container_comments" for="comment">Comments :</h2><br>  
         <form action="#" method="post">
             <p>
                 <input type="text" name="username" id="username" class="username-comment" placeholder="Your name">
