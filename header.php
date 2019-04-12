@@ -7,6 +7,8 @@ define('URL', 'http://localhost:8888/Semaine_Back/');
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link href="https://fontlibrary.org/face/bebas" rel="stylesheet" type="text/css" media="screen"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"/>
     <link href="<?= URL ?>style/style.css" rel="stylesheet">
