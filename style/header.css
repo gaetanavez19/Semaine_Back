@@ -51,7 +51,7 @@ h1 .sitename
 .left_links
 {
     width : 40%;
-    padding: 15px;  
+    padding: 2vh;
     display: flex; 
     justify-content: space-around; 
 }
